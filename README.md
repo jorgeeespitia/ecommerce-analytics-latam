@@ -46,12 +46,16 @@ Dos páginas construidas con los CSV limpios del análisis:
 ├── LICENSE
 └── README.md
 ```
+## Datos y reproducibilidad
 
-## Cómo reproducirlo
+Los datos de este proyecto (pedidos, catálogo, campañas de marketing y eventos de usuarios) provienen de un **curso de análisis de datos** y son de uso exclusivo para ese programa, por lo que **no se incluyen en este repositorio** y el análisis no puede ejecutarse de extremo a extremo con un clic.
 
-1. Coloca los CSV del curso en `data/`: `orders_raw.csv`, `catalog.csv`, `marketing_spend.csv` y `experiment_checkout_ui.csv`.
-2. Las consultas SQL (Pasos 3 y 4) usan una base de **acceso restringido** del curso. Las credenciales se leen de variables de entorno (`DB_USER`, `DB_PWD`, `DB_HOST`, `DB_NAME`) y los resultados se conservan como salidas guardadas en el notebook.
-3. Instala las dependencias: `pip install pandas numpy scipy statsmodels sqlalchemy psycopg2-binary`.
+Para que el trabajo sea revisable de todas formas, el repositorio incluye:
+
+- **Notebook completo** (`notebooks/`): código, decisiones de limpieza y resultados de cada paso, con las salidas visibles.
+- **Versión HTML** (`reports/`): el mismo análisis para leerlo sin instalar nada.
+- **Dashboard en PDF** (`dashboard/`): resultado final en Power BI.
+- **Descripción de las tablas** (más abajo): las columnas y el formato que espera el código.
 
 ## Uso responsable de IA
 
